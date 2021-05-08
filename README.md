@@ -8,8 +8,8 @@ The purpose of the analysis is to (1) determine the number of retiring employees
 
 # Results
 - Per [unique_titles](https://github.com/arelysrsd87/Pewlett-Hackard-Analysis-Challenge/blob/main/Data/unique_titles.csv) table, a total of 90,398 employees are of retiriment-age. 
-- Per [retiring_titles](https://github.com/arelysrsd87/Pewlett-Hackard-Analysis-Challenge/blob/main/Data/retiring_titles.csv) table, the largest 'silver tsunami' is beign led by Senior Engineers and Senior Staff with a whooping 29, 414 (32%) and 28, 254 (31%) employees of retirment-age, respectively. This two groups accounts for 63% of retirement-age employees.
-- Noticibly, two out five active managers are retiring soon.
+- Per [retiring_titles](https://github.com/arelysrsd87/Pewlett-Hackard-Analysis-Challenge/blob/main/Data/retiring_titles.csv) table, the largest 'silver tsunami' is beign led by Senior Engineers and Senior Staff with a whooping 29, 414 (32%) and 28, 254 (31%) employees of retirment-age, respectively. This two groups accounts for 63% of retirement-age employees. ![retiring_title_count](https://github.com/arelysrsd87/Pewlett-Hackard-Analysis-Challenge/blob/main/Images/retiring_title_count.png)
+- Noticibly, two out [five active managers](https://github.com/arelysrsd87/Pewlett-Hackard-Analysis-Challenge/blob/main/Data/manager_info.csv) are retiring soon.
 - Per the [mentorship](https://github.com/arelysrsd87/Pewlett-Hackard-Analysis-Challenge/blob/main/Data/mentorship.csv) table, a total of 1, 549 employees are able to participate on the mentorship program.
 
 # Summary
