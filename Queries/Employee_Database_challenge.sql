@@ -55,3 +55,31 @@ ORDER BY e.emp_no;
 
 SELECT * FROM mentorship;
 select de.to_date from dept_emp de
+
+SELECT * FROM manager_info;
+
+--How many roles will need to be filled
+SELECT COUNT (emp_no) FROM unique_titles;
+
+--How many mentors are there for each title
+SELECT COUNT(title), title
+--INTO mentorship_titles
+FROM mentorship
+GROUP BY title
+ORDER BY COUNT DESC; 
+
+SELECT * FROM mentorship_titles; 
+
+ALTER TABLE mentorship_titles
+RENAME COLUMN count TO mentorship_titles_count;
+
+ALTER TABLE retiring_titles
+RENAME COLUMN count TO retiring_title_count;
+
+--What is the ratio of mentor to retiring employee ratio
+SELECT rt.retiring_title_count, mt.mentorship_titles_count, mt.title
+INTO mentorship_ratio_title
+FROM mentorship_titles as mt
+LEFT JOIN retiring_titles as rt
+ON mt.title = rt.title
+ORDER BY rt.retiring_title_count DESC;
