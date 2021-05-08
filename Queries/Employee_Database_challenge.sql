@@ -83,3 +83,5 @@ FROM mentorship_titles as mt
 LEFT JOIN retiring_titles as rt
 ON mt.title = rt.title
 ORDER BY rt.retiring_title_count DESC;
+
+SELECT *  FROM mentorship_ratio_title;
